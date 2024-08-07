@@ -1,0 +1,152 @@
+
+@media screen and (max-width: 600px){
+  body {
+    flex-direction: column;
+    max-width: 100%;
+
+    #sp-langage {
+      display: block; 
+      position: absolute;
+      right: 70px;
+      top: 10px;
+
+      ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: right;
+
+        li{
+          margin: 5px 0;
+          padding-right: 10px;
+        }
+      }
+
+    }
+
+  .mainvisual{
+    background-image: url("../image/sp.png");
+    background-size: cover;
+    background-position: center;
+   }
+
+  .menu {
+    .pc { display: none !important; }
+    .sp { display: block !important; }
+
+    display: flex;
+    flex-direction: column;
+    
+
+   ul {
+     flex-direction: column;
+     align-items: center;
+     padding: 0;
+
+    li{
+      margin-bottom: 50px;
+      width: 80%;
+    }
+
+    img{
+      width: 100%;
+    }
+        }
+
+    .order1{
+      order: 1;
+    }
+
+    .order2{
+      order: 2;
+    }
+
+    .order3{
+      order: 3;
+    }
+
+    .logo {
+      margin: 50px 0;
+    }
+    
+  }
+
+   main{
+      max-width:100%;
+
+      #about{
+        img{
+          padding-left: 0;
+          margin-bottom: 40px;
+        }
+      }
+
+      .feature,.history{
+        img{
+          margin-bottom: 50px;
+          width: 90%;
+        }
+      }
+
+     .skill{
+        
+        ul{
+        flex-direction: column;
+        align-items: center;
+
+        li{
+          width: 80%;
+          margin-bottom: 50px;
+        }
+
+        img{
+          width: 40%;
+        }
+        }
+      }
+   
+
+      #about,.history,.feature{
+        .content{
+          flex-direction: column-reverse;
+          padding: 0 8px;
+        }
+        .history2,.feature2 {
+          .content {
+            flex-direction: column-reverse;
+          }
+      }
+      }
+
+      #work {
+        ul {
+          width: 100%;
+          height: auto;
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+          padding: 0;
+          overflow-x:hidden;
+          height: auto;
+
+
+          li {
+            margin: 0px;
+            margin-bottom: 50px;
+            width: 100%;
+          }
+        }
+      }
+
+      #contact {
+        max-width: 100%;
+        padding: 0 10px;
+        margin-bottom: 100px;
+
+        .btn{
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

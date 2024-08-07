@@ -1,0 +1,359 @@
+header {
+  max-width: 100%;
+}
+header a:link, header a:visited, header a:hover, header a:active {
+  color: black;
+  text-decoration: none;
+}
+header .nav a {
+  color: #fbe9ea;
+}
+header .langage ul {
+  display: flex;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+header .langage ul .jpn {
+  margin-right: 15px;
+}
+header .langage ul .eng {
+  margin-right: 15px;
+}
+header .langage ul .active {
+  text-decoration: underline;
+}
+header #sp-langage {
+  display: none;
+}
+header .menu {
+  background-image: url("../image/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+header .menu .pc {
+  display: block !important;
+}
+header .menu .sp {
+  display: none !important;
+}
+header .menu ul {
+  text-align: center;
+  display: flex;
+  padding: 0%;
+  margin-bottom: 0px;
+  width: 100%;
+}
+header .menu ul li {
+  width: 33%;
+}
+header .menu .logo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  body #sp-langage {
+    display: block;
+    position: absolute;
+    right: 70px;
+    top: 10px;
+  }
+  body #sp-langage ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+  }
+  body #sp-langage ul li {
+    margin: 5px 0;
+    padding-right: 10px;
+  }
+  body .mainvisual {
+    background-image: url("../image/sp.png");
+    background-size: cover;
+    background-position: center;
+  }
+  body .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  body .menu .pc {
+    display: none !important;
+  }
+  body .menu .sp {
+    display: block !important;
+  }
+  body .menu ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  body .menu ul li {
+    margin-bottom: 50px;
+    width: 80%;
+  }
+  body .menu ul img {
+    width: 100%;
+  }
+  body .menu .order1 {
+    order: 1;
+  }
+  body .menu .order2 {
+    order: 2;
+  }
+  body .menu .order3 {
+    order: 3;
+  }
+  body .menu .logo {
+    margin: 50px 0;
+  }
+  body main {
+    max-width: 100%;
+  }
+  body main #about img {
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+  body main .feature img, body main .history img {
+    margin-bottom: 50px;
+    width: 90%;
+  }
+  body main .skill ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .skill ul li {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  body main .skill ul img {
+    width: 40%;
+  }
+  body main #about .content, body main .history .content, body main .feature .content {
+    flex-direction: column-reverse;
+    padding: 0 8px;
+  }
+  body main #about .history2 .content, body main #about .feature2 .content, body main .history .history2 .content, body main .history .feature2 .content, body main .feature .history2 .content, body main .feature .feature2 .content {
+    flex-direction: column-reverse;
+  }
+  body main #work ul {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: auto;
+  }
+  body main #work ul li {
+    margin: 0px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  body main #contact {
+    max-width: 100%;
+    padding: 0 10px;
+    margin-bottom: 100px;
+  }
+  body main #contact .btn {
+    max-width: 100%;
+  }
+}
+main {
+  text-align: center;
+  margin: 0 auto;
+  width: 900px;
+}
+main .japanese {
+  display: none;
+}
+main .jpn-on {
+  display: block;
+}
+main .english {
+  display: block;
+}
+main .eng-off {
+  display: none;
+}
+main h1 {
+  color: #03005D;
+}
+main h3 {
+  color: #03005D;
+}
+main p {
+  color: #03005D;
+}
+main .form-label {
+  color: #03005D;
+}
+main .btn {
+  background-color: #03005D;
+}
+main .text {
+  width: 300px;
+  color: #03005D;
+}
+
+#about {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+#about h1 {
+  margin-bottom: 20px;
+}
+#about h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+#about .content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+#about img {
+  padding-left: 100px;
+}
+
+.history img {
+  padding: 100px;
+  width: 40%;
+}
+
+.history, .feature {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+.history .history1, .history .history3, .history .feature1, .history .feature3, .feature .history1, .feature .history3, .feature .feature1, .feature .feature3 {
+  margin-top: 100px;
+}
+.history .history1 .content, .history .history3 .content, .history .feature1 .content, .history .feature3 .content, .feature .history1 .content, .feature .history3 .content, .feature .feature1 .content, .feature .feature3 .content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.history .history1 .content .text, .history .history3 .content .text, .history .feature1 .content .text, .history .feature3 .content .text, .feature .history1 .content .text, .feature .history3 .content .text, .feature .feature1 .content .text, .feature .feature3 .content .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.history .history2 .content, .history .feature2 .content, .feature .history2 .content, .feature .feature2 .content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-top: 100px;
+}
+
+.skill {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+.skill ul {
+  margin-top: 100px;
+  display: flex;
+  padding-left: 0px;
+}
+.skill ul li {
+  width: 25%;
+}
+.skill img {
+  margin-bottom: 50px;
+}
+
+.feature {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+.feature img {
+  padding: 100px;
+  width: 40%;
+}
+
+#work {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+#work .content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+#work ul {
+  display: flex;
+  width: 800px;
+  height: 500px;
+  overflow-x: scroll;
+}
+#work ul li {
+  margin-left: 100px;
+  width: 90%;
+}
+
+#contact {
+  padding-bottom: 100px;
+  width: 600px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+#contact h1 {
+  margin-bottom: 50px;
+}
+#contact p {
+  text-decoration: underline;
+}
+#contact .form-label {
+  text-align: left;
+}
+#contact .btn {
+  margin-top: 20px;
+  width: 600px;
+  margin-bottom: 100px;
+}
+#contact .contact-icon {
+  display: flex;
+  margin: auto;
+  display: block;
+}
+#contact .contact-icon img {
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  background-color: #03005D;
+  color: white;
+  padding: 25px;
+}
+
+body {
+  margin: 0;
+  padding-top: 60px;
+}
+
+li {
+  list-style: none;
+}
+
+/*# sourceMappingURL=main.css.map */

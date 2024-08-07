@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'header';
+@import 'mobile';
+@import 'contents';
+
+body {
+  margin:0;
+  padding-top: 60px; 
+  
+}
+
+li {
+  list-style: none;
+}
