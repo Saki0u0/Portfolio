@@ -56,6 +56,15 @@ header .menu .logo {
   width: 500px;
   height: 240px;
 }
+header .menu .logo h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 50px;
+  letter-spacing: 1rem;
+  font-weight: bold;
+  font-style: normal;
+  color: #03005D;
+  line-height: 1.5;
+}
 
 @media screen and (max-width: 600px) {
   body {
@@ -78,15 +87,13 @@ header .menu .logo {
     margin: 5px 0;
     padding-right: 10px;
   }
-  body .mainvisual {
-    background-image: url("../image/sp.png");
-    background-size: cover;
-    background-position: center;
-  }
   body .menu {
     padding: 10px;
     display: flex;
     flex-direction: column;
+    background-image: url("../image/sp.png");
+    background-size: cover;
+    background-position: center;
   }
   body .menu .pc {
     display: none !important;
@@ -116,7 +123,9 @@ header .menu .logo {
     order: 3;
   }
   body .menu .logo {
-    margin: 50px 0;
+    margin: 50px auto;
+    max-width: 400px;
+    width: 100%;
   }
   body main {
     max-width: 100%;
@@ -129,15 +138,16 @@ header .menu .logo {
     margin-bottom: 50px;
     width: 90%;
   }
-  body main .skill ul {
+  body main .skill .skill-contents {
     flex-direction: column;
     align-items: center;
+    grid-template-columns: 1fr;
   }
-  body main .skill ul li {
+  body main .skill .skill-contents .skillContents {
     width: 80%;
     margin-bottom: 50px;
   }
-  body main .skill ul img {
+  body main .skill .skill-contents img {
     width: 40%;
   }
   body main #about .content, body main .history .content, body main .feature .content {
@@ -253,16 +263,27 @@ main .text {
   padding-top: 100px;
   padding-bottom: 200px;
 }
+.skill h1 {
+  margin-bottom: 100px;
+}
 .skill .skill-contents {
   margin-top: 100px;
   padding-left: 0px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .skill .skill-contents .skillContents {
   display: flex;
   width: 70%;
   margin-bottom: 20px;
+  max-width: 500px;
+  padding-bottom: 30px;
+  margin: 0 auto;
 }
 .skill img {
   margin-right: 20px;
@@ -327,6 +348,11 @@ main .text {
   margin-top: 20px;
   width: 600px;
   margin-bottom: 100px;
+  background-color: #03005D;
+  color: white;
+}
+#contact .btn:hover {
+  opacity: 0.8;
 }
 #contact .contact-icon {
   display: flex;
