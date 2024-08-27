@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <title>Saki's Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript">
@@ -100,8 +105,11 @@
               </ul>
             </div>
             <div class="logo order1">
-              <img class="pc" src="image/name.PNG" alt="logo" >
-              <img class="sp" src="image/name.sp.PNG" alt="logo" >
+              <!-- <img class="pc" src="image/name.PNG" alt="logo" >
+              <img class="sp" src="image/name.sp.PNG" alt="logo" > -->
+              <h1><span>HELLO!</span><br>
+                <span>My name is</span>
+                <span>SAKI EBINA!</span></h1>
            </div>
             <div class="order3">
               <ul>
@@ -191,20 +199,72 @@
     <!-- skill -->
     <div id ="skill" class = "skill">
       <h1>SKILLS</h1>
-      <ul>
-        <li><img src="image/HTMLアイコン.png">
-          <h3>HTML</h3>
-        </li>
-        <li><img src="image/CSSアイコン.png">
-          <h3>CSS</h3>
-        </li>
-        <li><img src="image/JSアイコン.png">
-          <h3>JavaScript</h3>
-        </li>
-        <li><img src="image/鉛筆を持つ手のアイコン.png">
-          <h3>Design</h3>
-        </li>
-      </ul>
+      <div class = "skill-contents">
+        <div class="skillContents">
+          <img src="image/html.svg">
+          <div class="skill-description">
+            <h3>HTML</h3>
+            <p class="japanese">スマホやタブレットなどの様々なデバイスに対応したレスポンシブデザインを実現し、どんな画面サイズでも快適に閲覧できるサイトを制作できます。
+            </p>
+            <p class="english">
+              Designing the foundational structure of web pages with semantic markup to ensure accessibility and SEO optimization.
+            </p>
+          </div>
+        </div>
+        <div class="skillContents">
+          <img src="image/css.svg">
+          <div class="skill-description">
+            <h3>CSS</h3>
+          <p class="japanese">レスポンシブデザイン、Flexbox、Gridレイアウトを使用して、美しく、使いやすいユーザーインターフェースを実装します。SCSSを使用して、効率的でメンテナンスしやすいスタイルシートを作成します。</p>
+          <p class="english">
+            Implementing responsive designs using Flexbox and Grid layouts to create visually appealing and user-friendly interfaces. I use SCSS for efficient and maintainable styling.
+          </p>
+          </div>
+        </div>
+        <div class="skillContents">
+          <img src="image/js.svg">
+          <div class="skill-description">
+            <h3>JavaScript</h3>
+            <p class = "japanese">DOM操作、イベントハンドリング、AJAXリクエストなどを活用して、インタラクティブなウェブアプリケーションを開発します。</p>
+            <p class="english">
+              Leveraging DOM manipulation, event handling, and AJAX requests to develop interactive web applications.
+            </p>
+            <p class = "japanese">JQuery:簡潔で効率的なコードを使って、アニメーションや動的なコンテンツの更新を実装します。</p>
+            <p class="english">
+              JQuery:Using concise and efficient code to implement animations and dynamic content updates
+            </p>
+            <p class = "japanese">GSAP:高度なアニメーションを作成し、視覚的に魅力的なエフェクトを実現します。
+            </p>
+            <p class="english">
+              GSAP: Creating advanced animations and visually engaging effects.
+            </p>
+          </div>
+        </div>
+        <div class="skillContents">
+          <img src="image/bootstrap.svg">
+          <div class="skill-description">
+            <h3>Boostrap</h3> 
+            <p class="japanese">
+              レスポンシブでモバイルファーストなウェブサイトを迅速に構築できるフレームワーク。プリビルトのコンポーネントやユーティリティクラスを利用して、デザインの一貫性と視覚的な魅力を保ちます。
+            </p>
+            <p class="english">
+              A framework for quickly creating responsive, mobile-first websites with pre-designed components and utility classes, ensuring a consistent and visually appealing design across different devices.
+            </p>
+          </div>
+        </div>
+        <div class="skillContents">
+          <img src="image/wordpress.svg">
+          <div class="skill-description">
+            <h3>Wordpress</h3>
+            <p class="japanese">
+              カスタマイズとレイアウトを行い、ユーザーの要求に応じたデザインを提供します。
+            </p>
+            <p class="english">
+              Building and customizing content management systems, integrating plugins.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- feature -->
@@ -319,6 +379,7 @@
   </footer>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
-  <script src = "/app.js"></script>
+  <script src = "/js/app.js"></script>
+  <script src = "/js/gsap.js"></script>
 </body>
 </html>

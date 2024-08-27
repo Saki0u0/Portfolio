@@ -33,10 +33,10 @@
   .menu {
     .pc { display: none !important; }
     .sp { display: block !important; }
-
+    
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    
 
    ul {
      flex-direction: column;

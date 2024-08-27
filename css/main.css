@@ -52,6 +52,9 @@ header .menu .logo {
   text-align: center;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  width: 500px;
+  height: 240px;
 }
 
 @media screen and (max-width: 600px) {
@@ -81,6 +84,7 @@ header .menu .logo {
     background-position: center;
   }
   body .menu {
+    padding: 10px;
     display: flex;
     flex-direction: column;
   }
@@ -184,24 +188,11 @@ main .english {
 main .eng-off {
   display: none;
 }
-main h1 {
+main h1, main h3, main p, main .form-label, main .btn, main .text {
   color: #03005D;
-}
-main h3 {
-  color: #03005D;
-}
-main p {
-  color: #03005D;
-}
-main .form-label {
-  color: #03005D;
-}
-main .btn {
-  background-color: #03005D;
 }
 main .text {
   width: 300px;
-  color: #03005D;
 }
 
 #about {
@@ -262,16 +253,25 @@ main .text {
   padding-top: 100px;
   padding-bottom: 200px;
 }
-.skill ul {
+.skill .skill-contents {
   margin-top: 100px;
-  display: flex;
   padding-left: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-.skill ul li {
-  width: 25%;
+.skill .skill-contents .skillContents {
+  display: flex;
+  width: 70%;
+  margin-bottom: 20px;
 }
 .skill img {
-  margin-bottom: 50px;
+  margin-right: 20px;
+  max-width: 50px;
+  height: 50px;
+}
+.skill .skill-description {
+  flex: 1;
+  text-align: left;
 }
 
 .feature {
